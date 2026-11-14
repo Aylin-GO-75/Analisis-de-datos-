@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-# 1. Cargar los datos desde el archivo de texto
+
 try:
     data = np.loadtxt('datos_ADN.txt')
 except OSError:
@@ -50,7 +50,7 @@ ndf = len(bin_centers_x) - 2  # Grados de libertad (N_bins - 2 parámetros)
 chi2_reducida = chi2 / ndf
 
 # 5. SECCIÓN 6: Propagación analítica de errores para un valor específico de X
-# Puedes cambiar este valor de x por el que te pida tu práctica o guía
+
 x_evaluar = 15.0  
 
 # Cálculo analítico de y y su incertidumbre sigma_y usando la matriz de covarianza (V)
